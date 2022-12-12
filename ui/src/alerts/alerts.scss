@@ -1,0 +1,142 @@
+.alert-container {
+  display: flex;
+  height: calc(100vh - 46px);
+
+  .alerts-card {
+    min-width: 250px;
+    height: 100%;
+
+    .ant-card-body {
+      display: flex;
+      flex-direction: column;
+      padding: 0 0 24px 0;
+    }
+
+    .title-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 15px;
+
+      .title {
+        font-weight: 600;
+        font-size: 16px;
+        padding: 10px 0 5px 0;
+      }
+
+    }
+
+    .ant-menu-item-selected {
+      background-color: #eac545;
+      color: white;
+    }
+
+    .ant-menu-item-active {
+      color: #001529;
+      font-weight: 600;
+    }
+  }
+
+  .data-card {
+    width: 100%;
+    overflow: auto;
+
+    .alert-card {
+      padding: 0 0 2em 0;
+
+      .alert-header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .alert-name {
+        font-weight: 600;
+        font-size: 24px;
+      }
+
+      .alert-content-container{
+
+        input {
+          margin: 4px 0;
+          width: 350px;
+        }
+
+        .add-button-container{
+          display: flex;
+          justify-content: flex-end;
+          margin: 5px 0 0 0;
+        }
+
+        .section-header {
+          font-size: 20px;
+          font-weight: 500;
+          padding: 5px 0;
+        }
+
+        .label-menu-container{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          padding: 12px 0;
+
+          .label-title {
+            padding: 0 0 0 7px;
+            font-size: 16px;
+          }
+        }
+
+        .anticon{
+          padding: 0 7px;
+        }
+      }
+
+      .menu-buttons {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 12px;
+
+        .ant-btn {
+          margin: 0 0 0 12px;
+        }
+      }
+    }
+
+    .alert-events-card{
+      padding: 2em 0;
+      border-top: 1px solid gainsboro;
+
+      .alert-events-label{
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .trace-tags {
+        cursor: pointer;
+      }
+
+      .trace-tags:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.new-alert-modal {
+  .new-alert-label {
+    font-weight: 600;
+  }
+
+  .new-alert-input-field{
+
+    .add-button-container{
+      display: flex;
+      justify-content: flex-end;
+      margin: 5px 0 0 0;
+    }
+  }
+
+  input {
+    margin: 4px 0;
+  }
+
+}

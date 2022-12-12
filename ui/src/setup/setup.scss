@@ -1,0 +1,155 @@
+.setup-container {
+  display: flex;
+  height: calc(100vh - 46px);
+  overflow: auto;
+
+  .labels-card {
+    min-width: 250px;
+    height: 100%;
+
+    .ant-card-body {
+      display: flex;
+      flex-direction: column;
+      padding: 0 0 24px 0;
+    }
+
+    .title-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 15px;
+
+      .title {
+        font-weight: 600;
+        font-size: 16px;
+        padding: 10px 0 5px 0;
+      }
+
+    }
+
+    .ant-menu-item-selected {
+      background-color: #eac545;
+      color: white;
+    }
+
+    .ant-menu-item-active {
+      color: #001529;
+      font-weight: 600;
+    }
+
+  }
+
+  .data-card {
+    width: 100%;
+    overflow: auto;
+
+    .label-card {
+      .label-header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .label-name {
+        font-weight: 600;
+        font-size: 24px;
+      }
+    }
+
+    .label-menu {
+      margin: 20px 0 0 0;
+
+      .section-header {
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      .test-menu-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 12px 0;
+
+        .test-title {
+          padding: 0 0 0 7px;
+          font-size: 16px;
+        }
+      }
+
+      .alert-menu-container {
+        padding: 12px 0;
+
+        .alert-tags {
+          cursor: pointer;
+        }
+
+        .alert-tags:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .menu-buttons {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 12px;
+
+        .ant-btn {
+          margin: 0 0 0 12px;
+        }
+      }
+    }
+  }
+
+}
+
+
+/* Input fields on the AllNist page*/
+#nist-additional-fields-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+
+}
+.nist-additional-fields{
+  margin: 0px 0px 0px 40px;
+}
+
+.section-header{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.ant-input-number{
+  width: 230px;
+  margin: 5px 10px;
+}
+
+.note{
+  margin-bottom: 15px;
+}
+
+label{
+  margin: 0 4px;
+  font-size: 16px;
+}
+
+.error{
+  background-color: #ffcccb;
+  color: #8B0000;
+  padding: 10px;
+  width: 350px;
+  border-radius: 4px;
+  border: 1px solid #8B0000;
+}
+
+
+.nist-additional-fields{
+  input{
+    padding: 3px;
+    border-radius: 3px;
+    border: 1px solid gray;
+  }
+}
+
+.results-header{
+  margin-top: 40px;
+  margin-bottom: 20px;
+}

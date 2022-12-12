@@ -1,0 +1,17 @@
+const BACKEND_URL = "http://localhost:7111"
+const DEFAULT_PAGE_SIZE = 20
+const FIRST_PAGE = 0
+const MAX_PAGE_SIZE = 2_147_483_647
+const STATUS_NEW = 'NEW'
+const STATUS_RESOLVED = 'RESOLVED'
+
+module.exports = {
+    BACKEND_URL,
+    DEFAULT_PAGE_SIZE,
+    FIRST_PAGE,
+    MAX_PAGE_SIZE,
+    STATUS_NEW,
+    STATUS_RESOLVED
+};
+
+

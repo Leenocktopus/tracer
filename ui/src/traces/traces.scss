@@ -1,0 +1,86 @@
+.traces-container {
+  display: flex;
+  height: calc(100vh - 46px);
+
+  .filter-card {
+    min-width: 350px;
+    height: 100%;
+
+    .ant-card-body {
+      display: flex;
+      flex-direction: column;
+      padding-top: 0;
+    }
+
+
+    .filter-title {
+      font-weight: 600;
+      font-size: 16px;
+      padding: 10px 0 5px 0;
+    }
+
+
+    .timestamp-panel {
+      .label {
+        padding: 5px 0;
+      }
+    }
+
+    .application-panel, .label-panel {
+      .ant-checkbox-group {
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+    }
+
+    .filter-buttons-container {
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px 0 0 0;
+
+      button {
+        margin: 0 0 0 7px;
+      }
+    }
+
+  }
+
+  .data-card {
+    width: 100%;
+    overflow: auto;
+
+    .traces-table-header {
+      padding: 0 0 5px 0;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+  }
+
+  .traces-table-container {
+    .ant-table-cell {
+      vertical-align: top;
+      max-width: 23vw;
+    }
+
+    .ant-tag {
+      margin: 2px 3px;
+    }
+
+    .ant-table-cell-row-hover {
+      .ant-table-row-expand-icon {
+        color: #001529;
+      }
+    }
+
+    .ant-spin-dot-item {
+      background-color: #001529;
+    }
+
+    .application-name {
+      font-weight: 600;
+    }
+
+  }
+
+}

@@ -1,0 +1,92 @@
+.time-filter-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  .label {
+    margin: 0 10px;
+  }
+
+  .ant-select {
+    width: 150px;
+
+  }
+
+  .ant-picker {
+    margin: 0 20px 0 0;
+  }
+}
+
+
+.chart-card {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+
+  .chart-title {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .statistics-area {
+    .count-field {
+      font-size: 24px;
+      font-weight: 600;
+      margin: 0 5px;
+      text-decoration: underline;
+    }
+
+    .count-label {
+      font-size: 24px;
+      font-weight: 500;
+      color: #5C5C5C;
+    }
+
+    .chart-title {
+      padding: 0 0 10px 0;
+    }
+
+    .test-table {
+      min-width: 320px;
+      font-size: 16px;
+
+      .test-count {
+        padding: 0 4px;
+        font-weight: 600;
+        text-decoration: underline;
+      }
+
+      .test-title {
+        font-weight: 500;
+        color: #5C5C5C;
+      }
+
+      .test-type {
+        font-size: 14px;
+      }
+
+      .md-test {
+        color: #FFD700
+      }
+
+      .nist-test {
+        color: #0057B8
+      }
+    }
+  }
+
+  .section-title {
+    font-weight: 600;
+    font-size: 24px;
+    padding: 5px 0 10px 0;
+  }
+
+  .label-distribution{
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+
+
+

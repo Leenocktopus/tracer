@@ -1,0 +1,35 @@
+.navigation-bar {
+    display: flex;
+    flex-direction: row;
+
+    .logo-container {
+        background: #001529;
+        color: #eac545;
+        min-width: 150px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        border-bottom: 1px solid #f0f0f0;
+
+        .anticon > svg {
+            width: 25px;
+            height: 25px;
+            color: #eac545;
+        }
+
+        .logo-text {
+            font-weight: 600;
+            font-size: 16px;
+        }
+    }
+
+    .ant-menu-horizontal {
+        width: 100%;
+    }
+
+    .ant-menu-item-selected, .ant-menu-item-active {
+        background-color: #eac545 !important;
+    }
+}
+
